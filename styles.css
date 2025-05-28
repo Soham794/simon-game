@@ -13,18 +13,23 @@ body {
 .container {
   display: block;
   width: 50%;
-  margin: auto;
-
+  margin: 5% auto;
 }
+
 
 .btn {
-  margin: 25px;
+  margin: 0.5%;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border: 10px solid black;
-  border-radius: 20%;
 }
+
+.btn:hover{
+  cursor: pointer;
+}
+
+
 
 .game-over {
   background-color: red;
@@ -33,18 +38,24 @@ body {
 
 .red {
   background-color: red;
+  
+  border-radius:20px 320px 20px 20px;
 }
 
 .green {
   background-color: green;
+  
+  border-radius:320px 20px 20px;
 }
 
 .blue {
   background-color: blue;
+  border-radius:20px 20px 320px 20px;
 }
 
 .yellow {
   background-color: yellow;
+  border-radius:20px 20px 20px 320px;
 }
 
 .pressed {
@@ -52,3 +63,44 @@ body {
   background-color: grey;
 }
 
+@media(max-width: 1150px){
+  .btn {
+    margin: 0.5%;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+  }
+  .container{
+    margin: 20% auto;
+  }
+}
+
+@media(max-width: 750px) {
+  .btn {
+    margin: 0.5%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+  }
+  .container{
+    margin: 25% auto;
+  }
+}
+
+@media(max-width: 550px){
+    .btn {
+    margin: 0.5%;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border: 5px solid black;
+  }
+  .container{
+    margin: 30% auto;
+  }
+  #level-title{
+    font-size: 2rem
+  }
+}
